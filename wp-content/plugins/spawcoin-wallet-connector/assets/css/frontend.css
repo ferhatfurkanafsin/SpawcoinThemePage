@@ -1,0 +1,392 @@
+/*
+ * Spawcoin Wallet Connector - Frontend Styles
+ */
+
+:root {
+    --swc-primary: #6366f1;
+    --swc-primary-dark: #4f46e5;
+    --swc-secondary: #ec4899;
+    --swc-success: #10b981;
+    --swc-error: #ef4444;
+    --swc-warning: #f59e0b;
+    --swc-dark: #0f172a;
+    --swc-dark-secondary: #1e293b;
+    --swc-light: #ffffff;
+    --swc-light-secondary: #f8fafc;
+    --swc-border: #e2e8f0;
+    --swc-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    --swc-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    --swc-radius: 8px;
+    --swc-radius-lg: 12px;
+}
+
+/* Wallet Button */
+.swc-wallet-button,
+.swc-connect-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    background: linear-gradient(135deg, var(--swc-primary), var(--swc-primary-dark));
+    color: var(--swc-light);
+    border: none;
+    border-radius: var(--swc-radius);
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: var(--swc-shadow);
+    position: relative;
+    overflow: hidden;
+}
+
+.swc-wallet-button:hover,
+.swc-connect-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--swc-shadow-lg);
+    background: linear-gradient(135deg, var(--swc-primary-dark), var(--swc-primary));
+}
+
+.swc-wallet-button:active,
+.swc-connect-btn:active {
+    transform: translateY(0);
+}
+
+.swc-wallet-button.connected {
+    background: linear-gradient(135deg, var(--swc-success), #059669);
+}
+
+.swc-wallet-icon {
+    font-size: 20px;
+}
+
+.swc-wallet-info {
+    margin-top: 15px;
+    padding: 15px;
+    background: var(--swc-light-secondary);
+    border: 1px solid var(--swc-border);
+    border-radius: var(--swc-radius);
+}
+
+.swc-wallet-info p {
+    margin: 8px 0;
+    font-size: 14px;
+    color: var(--swc-dark);
+}
+
+.swc-address {
+    font-family: monospace;
+    background: var(--swc-light);
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+/* Buy Widget */
+.swc-buy-widget {
+    background: rgba(30, 41, 59, 0.5);
+    border: 1px solid rgba(99, 102, 241, 0.2);
+    border-radius: var(--swc-radius-lg);
+    padding: 30px;
+    max-width: 450px;
+    margin: 20px auto;
+    backdrop-filter: blur(10px);
+    box-shadow: var(--swc-shadow-lg);
+}
+
+.swc-widget-title {
+    margin: 0 0 25px 0;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    background: linear-gradient(135deg, var(--swc-primary), var(--swc-secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.swc-widget-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.swc-wallet-status {
+    text-align: center;
+}
+
+.swc-connected-info {
+    background: rgba(16, 185, 129, 0.1);
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    border-radius: var(--swc-radius);
+    padding: 15px;
+    margin-top: 15px;
+}
+
+.swc-address-display {
+    font-family: monospace;
+    font-size: 14px;
+    color: var(--swc-light);
+    margin: 10px 0;
+    word-break: break-all;
+}
+
+.swc-disconnect-btn {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background: transparent;
+    border: 1px solid rgba(239, 68, 68, 0.5);
+    color: #ef4444;
+    border-radius: var(--swc-radius);
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+.swc-disconnect-btn:hover {
+    background: rgba(239, 68, 68, 0.1);
+    border-color: #ef4444;
+}
+
+.swc-purchase-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.swc-input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.swc-input-group label {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--swc-light-secondary);
+}
+
+.swc-input {
+    padding: 12px 16px;
+    background: rgba(15, 23, 42, 0.5);
+    border: 1px solid rgba(99, 102, 241, 0.3);
+    border-radius: var(--swc-radius);
+    color: var(--swc-light);
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+.swc-input:focus {
+    outline: none;
+    border-color: var(--swc-primary);
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+.swc-price-display {
+    background: rgba(99, 102, 241, 0.1);
+    border: 1px solid rgba(99, 102, 241, 0.2);
+    border-radius: var(--swc-radius);
+    padding: 15px;
+    text-align: center;
+}
+
+.swc-price-display p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: var(--swc-light);
+}
+
+.swc-total-price {
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--swc-primary);
+}
+
+.swc-exchange-rate {
+    font-size: 13px !important;
+    color: #94a3b8 !important;
+}
+
+.swc-btn-primary {
+    padding: 14px 28px;
+    background: linear-gradient(135deg, var(--swc-primary), var(--swc-secondary));
+    color: var(--swc-light);
+    border: none;
+    border-radius: var(--swc-radius);
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: var(--swc-shadow);
+    width: 100%;
+}
+
+.swc-btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 20px rgba(99, 102, 241, 0.4);
+}
+
+.swc-btn-primary:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.swc-buy-btn {
+    position: relative;
+    overflow: hidden;
+}
+
+.swc-buy-btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: translate(-50%, -50%);
+    transition: width 0.5s, height 0.5s;
+}
+
+.swc-buy-btn:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+.swc-transaction-status {
+    padding: 15px;
+    border-radius: var(--swc-radius);
+    text-align: center;
+}
+
+.swc-transaction-status.success {
+    background: rgba(16, 185, 129, 0.1);
+    border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.swc-transaction-status.error {
+    background: rgba(239, 68, 68, 0.1);
+    border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+.swc-transaction-status.processing {
+    background: rgba(245, 158, 11, 0.1);
+    border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.swc-status-message {
+    margin: 0 0 10px 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.swc-tx-link {
+    display: inline-block;
+    color: var(--swc-primary);
+    text-decoration: none;
+    font-size: 13px;
+    margin-top: 8px;
+    transition: all 0.3s;
+}
+
+.swc-tx-link:hover {
+    color: var(--swc-secondary);
+    text-decoration: underline;
+}
+
+/* Loading Spinner */
+.swc-spinner {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: var(--swc-light);
+    animation: swc-spin 1s linear infinite;
+}
+
+@keyframes swc-spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .swc-buy-widget {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .swc-widget-title {
+        font-size: 20px;
+    }
+
+    .swc-wallet-button,
+    .swc-connect-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* Animation */
+@keyframes swc-fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.swc-fade-in {
+    animation: swc-fadeIn 0.3s ease;
+}
+
+/* Notification */
+.swc-notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 16px 20px;
+    background: var(--swc-light);
+    border-radius: var(--swc-radius);
+    box-shadow: var(--swc-shadow-lg);
+    z-index: 9999;
+    max-width: 350px;
+    animation: swc-slideIn 0.3s ease;
+}
+
+@keyframes swc-slideIn {
+    from {
+        transform: translateX(400px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.swc-notification.success {
+    border-left: 4px solid var(--swc-success);
+}
+
+.swc-notification.error {
+    border-left: 4px solid var(--swc-error);
+}
+
+.swc-notification.warning {
+    border-left: 4px solid var(--swc-warning);
+}
+
+.swc-notification-message {
+    margin: 0;
+    color: var(--swc-dark);
+    font-size: 14px;
+    font-weight: 500;
+}

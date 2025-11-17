@@ -1,0 +1,330 @@
+/*
+ * Spawcoin Wallet Connector - Admin Styles
+ */
+
+.swc-admin-wrap {
+    max-width: 1200px;
+    margin: 20px 0;
+}
+
+.swc-admin-header {
+    background: #fff;
+    padding: 25px;
+    margin: 20px 0;
+    border-left: 4px solid #6366f1;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.swc-admin-header h1 {
+    margin: 0 0 10px 0;
+    color: #0f172a;
+}
+
+.swc-admin-header .description {
+    margin: 0;
+    font-size: 14px;
+    color: #64748b;
+}
+
+.swc-admin-content {
+    background: #fff;
+    padding: 25px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styles */
+.form-table th {
+    padding: 20px 10px 20px 0;
+    font-weight: 600;
+}
+
+.form-table td {
+    padding: 15px 10px;
+}
+
+.form-table input[type="text"],
+.form-table input[type="number"],
+.form-table select {
+    padding: 8px 12px;
+    font-size: 14px;
+}
+
+.form-table .code {
+    font-family: 'Courier New', monospace;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+}
+
+.form-table .description {
+    margin-top: 8px;
+    font-size: 13px;
+    color: #64748b;
+    font-style: normal;
+}
+
+/* Info Boxes */
+.swc-info-box {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 25px;
+    margin-top: 30px;
+}
+
+.swc-info-box h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #6366f1;
+    font-size: 18px;
+}
+
+.swc-info-box p {
+    margin: 10px 0;
+    color: #475569;
+}
+
+.swc-info-box ol {
+    margin: 15px 0;
+    padding-left: 25px;
+}
+
+.swc-info-box li {
+    margin: 8px 0;
+    color: #475569;
+    line-height: 1.6;
+}
+
+/* Shortcode Boxes */
+.swc-shortcode-box {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    padding: 15px;
+    margin: 12px 0;
+}
+
+.swc-shortcode-box code {
+    display: block;
+    background: #0f172a;
+    color: #6366f1;
+    padding: 12px 15px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-family: 'Courier New', monospace;
+}
+
+.swc-shortcode-box .description {
+    margin: 0;
+    font-size: 13px;
+    color: #64748b;
+}
+
+/* Stats Grid */
+.swc-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 25px 0;
+}
+
+.swc-stat-card {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.swc-stat-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-3px);
+    border-color: #6366f1;
+}
+
+.swc-stat-icon {
+    font-size: 2.5rem;
+    background: linear-gradient(135deg, #6366f1, #ec4899);
+    border-radius: 12px;
+    width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.swc-stat-content {
+    flex: 1;
+}
+
+.swc-stat-content h3 {
+    margin: 0 0 5px 0;
+    font-size: 2rem;
+    color: #0f172a;
+    font-weight: 700;
+}
+
+.swc-stat-content p {
+    margin: 0;
+    color: #64748b;
+    font-size: 14px;
+}
+
+/* Transactions Table */
+.swc-transactions-table-wrap {
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    margin-top: 25px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.swc-transactions-table-wrap h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #0f172a;
+}
+
+.swc-tx-hash,
+.swc-address {
+    font-family: 'Courier New', monospace;
+    background: #f8fafc;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    color: #475569;
+    border: 1px solid #e2e8f0;
+}
+
+.swc-status-badge {
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.swc-status-completed {
+    background: #d1fae5;
+    color: #065f46;
+}
+
+.swc-status-pending {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.swc-status-failed {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+.swc-no-transactions {
+    text-align: center;
+    padding: 60px 20px;
+    background: #f8fafc;
+    border-radius: 8px;
+}
+
+.swc-no-transactions p {
+    margin: 0;
+    color: #64748b;
+    font-size: 15px;
+}
+
+/* Button Styles */
+.button-primary.swc-save-btn {
+    background: linear-gradient(135deg, #6366f1, #4f46e5);
+    border-color: #6366f1;
+    padding: 8px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.button-primary.swc-save-btn:hover {
+    background: linear-gradient(135deg, #4f46e5, #6366f1);
+    border-color: #4f46e5;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(99, 102, 241, 0.3);
+}
+
+/* Notices */
+.notice.swc-notice {
+    border-left-width: 4px;
+    padding: 12px 15px;
+}
+
+.notice.swc-notice p {
+    margin: 0.5em 0;
+}
+
+/* Responsive */
+@media (max-width: 782px) {
+    .swc-stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .swc-admin-wrap {
+        margin: 10px 0;
+    }
+
+    .swc-admin-content,
+    .swc-admin-header,
+    .swc-transactions-table-wrap {
+        padding: 15px;
+    }
+
+    .swc-stat-card {
+        padding: 15px;
+    }
+
+    .swc-stat-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 2rem;
+    }
+
+    .swc-stat-content h3 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Animations */
+@keyframes swc-fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.swc-stat-card {
+    animation: swc-fadeIn 0.4s ease;
+}
+
+.swc-stat-card:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.swc-stat-card:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.swc-stat-card:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.swc-stat-card:nth-child(4) {
+    animation-delay: 0.3s;
+}
