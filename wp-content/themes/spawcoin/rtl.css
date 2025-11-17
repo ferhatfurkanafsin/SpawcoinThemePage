@@ -1,0 +1,61 @@
+/*
+Theme Name: Spawcoin
+Description: RTL (Right-to-Left) stylesheet for Spawcoin theme
+*/
+
+body.rtl {
+    direction: rtl;
+    unicode-bidi: embed;
+}
+
+.rtl .site-header {
+    direction: rtl;
+}
+
+.rtl .nav-container {
+    flex-direction: row-reverse;
+}
+
+.rtl .main-navigation ul {
+    flex-direction: row-reverse;
+}
+
+.rtl .hero-buttons {
+    flex-direction: row-reverse;
+}
+
+.rtl .footer-content {
+    direction: rtl;
+}
+
+.rtl .entry-meta {
+    direction: rtl;
+}
+
+.rtl .card {
+    text-align: right;
+}
+
+.rtl .grid {
+    direction: rtl;
+}
+
+.rtl blockquote {
+    border-left: none;
+    border-right: 3px solid var(--color-primary);
+    padding-left: 0;
+    padding-right: var(--spacing-lg);
+}
+
+.rtl .comment-list .children {
+    margin-left: 0;
+    margin-right: var(--spacing-xl);
+}
+
+.rtl .post-navigation {
+    direction: rtl;
+}
+
+.rtl .breadcrumb {
+    direction: rtl;
+}

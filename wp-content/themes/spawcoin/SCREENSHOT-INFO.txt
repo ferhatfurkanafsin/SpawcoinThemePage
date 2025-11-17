@@ -1,0 +1,37 @@
+THEME SCREENSHOT - How to Add
+
+The theme is fully functional without a screenshot, but adding one makes it look professional
+in WordPress Admin > Appearance > Themes.
+
+REQUIREMENTS:
+- Filename: screenshot.png
+- Dimensions: 1200x900 pixels (4:3 ratio)
+- Format: PNG (recommended) or JPG
+- Location: Place in this folder (wp-content/themes/spawcoin/)
+
+QUICK WAYS TO CREATE:
+
+Option 1: Take a Screenshot
+1. Activate the theme on your WordPress site
+2. Visit your homepage
+3. Take a screenshot (use browser extensions or built-in tools)
+4. Resize to 1200x900
+5. Save as screenshot.png
+
+Option 2: Use Design Tools
+- Canva: canva.com (free templates available)
+- Figma: figma.com (free for individuals)
+- Photoshop, GIMP, or any image editor
+
+Option 3: Use Placeholder
+WordPress will show a default gray placeholder if screenshot.png is missing.
+Your theme will work perfectly either way!
+
+RECOMMENDED CONTENT:
+- Show your homepage design
+- Include "Spawcoin" theme name
+- Use theme colors: #6366f1, #ec4899, #14b8a6
+- Make it look professional
+
+NOTE: The theme will work perfectly without a screenshot.
+This is purely cosmetic for the WordPress admin interface.
